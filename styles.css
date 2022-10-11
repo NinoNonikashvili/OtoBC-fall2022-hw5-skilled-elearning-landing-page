@@ -1,0 +1,199 @@
+/* fonts */
+@font-face {
+  font-family: PlusJakartaSans;
+  src:url(fonts/PlusJakartasans_Regular.ttf);
+}
+
+@media screen and (min-width:325px){
+  .padding-15px{
+    padding: 2%;
+  }
+  body{
+    margin:0 auto;
+    font-family: PlusJakartaSans;
+    font-size:16px;
+    font-style: normal;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
+  }
+  header, footer{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header-logo-img, .footer-logo-img{
+    width:89px;
+    height:35px;
+  }
+  .btn{
+    color: white;
+    text-align:center;
+    font-weight: 700;
+    border:none;
+  }
+
+  .header-btn{
+    background-color: #13183F;
+    border-radius: 28px;
+    width:140px;
+    height:48px;
+    line-height: 28px;
+    color: white;
+  }
+
+  .main-section{
+    margin-top:15px;
+    display:flex;
+    flex-direction:column;
+  }
+  .main-header{
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 50px;
+    color: #13183F;
+  }
+  .main-par{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #83869A;
+  }
+  .main-btn{
+    background:linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    border-radius: 31.5px;
+    width:167px;
+    height:56px;
+    line-height: 26px;
+   }
+   .main-img{
+     max-width:98%;
+     margin:0 auto;
+   }
+   .cards{
+     display:flex;
+     flex-direction: column;
+     width:100%;
+   }
+   .invitation-card{
+     background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+     border-radius: 10px;
+     padding:15px 20px 25px;
+     margin-bottom: 20px;
+   }
+   .invitation-par{
+     font-weight: 800;
+     font-size: 24px;
+     line-height: 32px;
+     color: #FFFFFF;
+     margin:0;
+   }
+   .card{
+     background: #FFFFFF;
+     box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
+     border-radius: 10px;
+     position:relative;
+     margin:20px 0;
+     padding: 12% 6% 8%;
+   }
+
+   .card-icon{
+     position:absolute;
+     top: -28px;
+     left: 6%;
+   }
+   .card-header{
+     font-weight: 800;
+     font-size: 20px;
+     line-height: 25px;
+     color: #13183F;
+   }
+   .card-par{
+     font-weight: 500;
+     font-size: 16px;
+     line-height: 26px;
+     color: #83869A;
+   }
+   .card-btn{
+     font-weight: 700;
+     font-size: 18px;
+     line-height: 28px;
+     color: #F74780;
+     border:none;
+     background:transparent;
+   }
+
+   footer{
+     background: #13183F;
+     padding: 6% 3%;
+
+   }
+   .footer-btn{
+     background: linear-gradient(180deg, #4851FF 0%, #F02AA6 100%);
+     border-radius: 28px;
+     width:140px;
+     height:48px;
+     line-height: 28px;
+     color: white;
+   }
+}
+
+
+@media screen and (min-width:768px){
+  body{
+    background-image: url(assets/image-hero-tablet.png);
+    background-repeat: no-repeat;
+    background-position-x: 50vw;
+    background-position-y: -92px;
+    font-size:18px;
+  }
+  .padding-15px{
+    padding: 6%;
+  }
+  .main-img{
+    display:none;
+  }
+  .main-section{
+    width:60%;
+    margin-bottom: 200px;
+  }
+  .main-btn{
+    margin-top:30px;
+  }
+  .cards{
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  .card, .invitation-card{
+    max-width:260px;
+  }
+  .card{
+    margin:15px 0;
+    padding: 8% 3% 2%;
+  }
+  .header-logo-img, .footer-logo-img{
+    width:100px;
+    height:45px;
+  }
+  .invitation-par{
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .invitation-card{
+     padding:56px 32px 32px;
+  }
+
+}
+
+@media screen and (min-width:1240px){  /*to be changed to 1440*/
+  body{
+    background-image: url(assets/image-hero-desktop.png);
+    background-repeat: no-repeat;
+    background-position-x: 50vw;
+    background-position-y: -92px;
+    font-size:18px;
+  }
+ .main-section{
+   margin-bottom: 60px;
+ }
+}
