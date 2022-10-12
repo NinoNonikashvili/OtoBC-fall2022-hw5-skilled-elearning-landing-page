@@ -5,8 +5,8 @@
 }
 
 @media screen and (min-width:325px){
-  .padding-15px{
-    padding: 2%;
+  .padding{
+    padding: 10px 2% 0;
   }
   body{
     margin:0 auto;
@@ -41,7 +41,7 @@
   }
 
   .main-section{
-    margin-top:15px;
+    margin:30px 0 100px;  /*spasce bewteen main section header - 50px, main section and cards section - 100px.*/
     display:flex;
     flex-direction:column;
   }
@@ -72,12 +72,16 @@
      display:flex;
      flex-direction: column;
      width:100%;
+     margin-bottom:50px; /*between cards section and footer*/
    }
    .invitation-card{
      background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
      border-radius: 10px;
-     padding:15px 20px 25px;
-     margin-bottom: 20px;
+     padding: 6% 6%;
+
+   }
+   .invitation-card, .card{
+     margin-bottom:45px;
    }
    .invitation-par{
      font-weight: 800;
@@ -91,7 +95,6 @@
      box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
      border-radius: 10px;
      position:relative;
-     margin:20px 0;
      padding: 12% 6% 8%;
    }
 
@@ -123,9 +126,9 @@
 
    footer{
      background: #13183F;
-     padding: 6% 3%;
-
+     padding: 30px 2%;
    }
+
    .footer-btn{
      background: linear-gradient(180deg, #4851FF 0%, #F02AA6 100%);
      border-radius: 28px;
@@ -142,18 +145,21 @@
     background-image: url(assets/image-hero-tablet.png);
     background-repeat: no-repeat;
     background-position-x: 50vw;
-    background-position-y: -92px;
+    background-position-y: -58px;
     font-size:18px;
   }
-  .padding-15px{
-    padding: 6%;
+  .padding{
+    padding: 39px 6% 0;
+  }
+  footer{
+    padding: 30px 6%;
   }
   .main-img{
     display:none;
   }
   .main-section{
     width:60%;
-    margin-bottom: 200px;
+    margin:100px 0 200px;
   }
   .main-btn{
     margin-top:30px;
@@ -164,12 +170,11 @@
   }
 
   .card, .invitation-card{
-    max-width:260px;
-  }
-  .card{
-    margin:15px 0;
+    width: 40%;
     padding: 8% 3% 2%;
+    margin-bottom: 80px;
   }
+
   .header-logo-img, .footer-logo-img{
     width:100px;
     height:45px;
@@ -179,13 +184,11 @@
     font-size: 32px;
     line-height: 40px;
   }
-  .invitation-card{
-     padding:56px 32px 32px;
-  }
+
 
 }
 
-@media screen and (min-width:1240px){  /*to be changed to 1440*/
+@media screen and (min-width:1200px){  /*to be changed to 1440*/
   body{
     background-image: url(assets/image-hero-desktop.png);
     background-repeat: no-repeat;
@@ -193,7 +196,44 @@
     background-position-y: -92px;
     font-size:18px;
   }
- .main-section{
-   margin-bottom: 60px;
- }
+  .main-section{
+    margin:175px 0 350px;
+  }
+  .padding{
+    padding:24px 10%;
+  }
+
+  .header-logo-img, .footer-logo-img{
+    width:111px;
+    height:35px;
+  }
+  .card, .invitation-card{
+    width: 250px;
+  }
+  footer{
+    padding:30px 10%;
+  }
+
+  /* fonts */
+  .main-header{
+    font-size: 56px;
+    line-height: 71px;
+  }
+  .main-par{
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .header-btn, .footer-btn,  .main-btn, .card-par{
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .invitation-par{
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .card-header{
+    font-size: 24px;
+    line-height: 30px;
+  }
+
 }
